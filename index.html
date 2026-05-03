@@ -3,660 +3,794 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clos Germanois — Chambre chez l'habitant à Saint-Germain-Laval (42260)</title>
-  <meta name="description" content="Chambre chez l'habitant à Saint-Germain-Laval, Loire, Rhône-Alpes. Accueil chaleureux par Murielle &amp; Sébastien, petit-déjeuner maison, cadre cosy. Réservez en direct ou sur Booking.com." />
-
-  <!-- Fonts -->
+  <title>Clos Germanois — Étape A89, table &amp; petit-déjeuner · Saint-Germain-Laval (42260)</title>
+  <meta name="description" content="Chambre chez l'habitant à Saint-Germain-Laval, à 2 min de l'A89 sortie 32. Étape idéale entre Lyon, Clermont-Ferrand et Saint-Étienne. Table d'hôtes, petit-déjeuner dès 6h30. Note 8.7/10 · 47 avis." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════════════════
-       NAV
-  ═══════════════════════════════════════════════════ -->
-  <nav class="nav" id="nav">
-    <a href="#" class="nav-logo">Clos Germanois<span>.</span></a>
-    <ul class="nav-links">
-      <li><a href="#chambre">La Chambre</a></li>
-      <li><a href="#galerie">Galerie</a></li>
-      <li><a href="#avis">Avis</a></li>
-      <li><a href="#situation">Situation</a></li>
-      <li><a href="#reserver" class="btn btn-primary nav-cta">Réserver</a></li>
-    </ul>
-  </nav>
+<!-- ── SCROLL PROGRESS ── -->
+<div id="scroll-progress"></div>
 
-  <!-- ═══════════════════════════════════════════════════
-       HERO
-  ═══════════════════════════════════════════════════ -->
-  <section class="hero">
-    <div class="hero-img"></div>
+<!-- ── MOBILE MENU ── -->
+<div class="menu-overlay" id="menu-overlay">
+  <a href="#chambre" class="menu-link">La Maison</a>
+  <a href="#chambres" class="menu-link">Chambres</a>
+  <a href="#galerie" class="menu-link">Galerie</a>
+  <a href="#table-hotes" class="menu-link">Table d'hôtes</a>
+  <a href="#avis" class="menu-link">Avis</a>
+  <a href="#situation" class="menu-link">Situation</a>
+  <a href="#reserver" class="menu-link">Réserver</a>
+  <div class="menu-overlay-footer">
+    <a href="https://wa.me/33623266950" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="https://www.booking.com/hotel/fr/clos-germanois.fr.html" target="_blank" rel="noopener">Booking.com</a>
+  </div>
+</div>
 
-    <div class="hero-content fade-in">
-      <div class="hero-badge">
-        <span class="hero-badge-dot"></span>
-        Disponible — Réservez maintenant
+<!-- ── NAV ── -->
+<nav class="nav" id="nav">
+  <a href="#" class="nav-logo">Clos Germanois<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#chambre">La Maison</a></li>
+    <li><a href="#chambres">Chambres</a></li>
+    <li><a href="#galerie">Galerie</a></li>
+    <li><a href="#table-hotes">Table d'hôtes</a></li>
+    <li><a href="#avis">Avis</a></li>
+    <li><a href="#situation">Situation</a></li>
+    <li><a href="#reserver" class="btn btn-primary nav-cta">Réserver</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero" id="hero">
+  <div class="hero-img" id="hero-parallax"></div>
+  <div class="hero-content">
+    <div class="hero-badge fade-in">
+      <span class="hero-badge-dot"></span>
+      À 2 min de l'A89 sortie 32 — Disponible
+    </div>
+    <h1 class="h1 fade-in stagger-1">
+      L'étape idéale<br /><em>entre Clermont, Lyon<br />et Saint-Étienne</em>
+    </h1>
+    <p class="hero-desc fade-in stagger-2">
+      79 rue Nationale, Saint-Germain-Laval — Murielle &amp; Sébastien vous accueillent dans leur maison chargée de caractère. Table d'hôtes le soir sur réservation, petit-déjeuner dès 6h30, parking gratuit. Posez vos valises, vous êtes chez vous.
+    </p>
+    <div class="hero-cta fade-in stagger-3">
+      <a href="#reserver" class="btn btn-primary btn-lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Réserver en direct
+      </a>
+      <a href="https://www.booking.com/hotel/fr/clos-germanois.fr.html" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        Voir sur Booking
+      </a>
+    </div>
+    <div class="hero-meta fade-in stagger-4">
+      <div class="hero-meta-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        Note 8.7/10 · Superbe
       </div>
-
-      <h1 class="h1">
-        Une chambre<br /><em>comme à la maison</em>
-      </h1>
-
-      <p class="hero-desc">
-        Bienvenue au Clos Germanois, à Saint-Germain-Laval en Loire Rhône-Alpes.
-        Murielle &amp; Sébastien vous accueillent dans leur maison avec le sourire — petit-déjeuner maison, chambres cosy, et l'authenticité d'un vrai chez-soi.
-      </p>
-
-      <div class="hero-cta">
-        <a href="#reserver" class="btn btn-primary btn-lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          Réserver en direct
-        </a>
-        <a href="https://www.booking.com" target="_blank" rel="noopener" class="btn btn-booking btn-lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          Voir sur Booking
-        </a>
+      <div class="hero-meta-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+        Petit-déj dès 6h30
       </div>
-
-      <div class="hero-meta">
-        <div class="hero-meta-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-          1 à 2 personnes
-        </div>
-        <div class="hero-meta-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          Chambre privée
-        </div>
-        <div class="hero-meta-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          Note 9.4/10 sur Booking
-        </div>
-        <div class="hero-meta-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          Petit-déjeuner inclus
-        </div>
+      <div class="hero-meta-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Check-in dès 5h30
+      </div>
+      <div class="hero-meta-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-4"/><path d="M12 12h.01"/></svg>
+        Parking + borne recharge
+      </div>
+      <div class="hero-meta-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        À partir de 77€/nuit
       </div>
     </div>
-  </section>
+  </div>
+  <div class="scroll-indicator" onclick="document.getElementById('galerie').scrollIntoView({behavior:'smooth'})">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    Découvrir
+  </div>
+</section>
 
-  <!-- ═══════════════════════════════════════════════════
-       GALERIE
-  ═══════════════════════════════════════════════════ -->
-  <section class="section" id="galerie">
-    <div class="section-inner">
-      <div class="section-header fade-in">
-        <span class="overline">Photos</span>
-        <h2 class="h2">Votre espace</h2>
-        <p class="lead">Un intérieur soigné où chaque détail a été pensé pour votre bien-être.</p>
-      </div>
-
-      <div class="gallery fade-in">
-        <div class="gallery-item">
-          <img src="photos/chambre-principale.jpg" alt="Chambre principale" loading="lazy" />
-        </div>
-        <div class="gallery-item">
-          <img src="photos/salle-bain.jpg" alt="Salle de bain" loading="lazy" />
-        </div>
-        <div class="gallery-item">
-          <img src="photos/coin-lecture.jpg" alt="Coin lecture" loading="lazy" />
-        </div>
-        <div class="gallery-item">
-          <img src="photos/petit-dejeuner.jpg" alt="Petit-déjeuner" loading="lazy" />
-        </div>
-        <div class="gallery-item">
-          <img src="photos/exterieur.jpg" alt="Extérieur" loading="lazy" />
-        </div>
-        <div class="gallery-item">
-          <img src="photos/detail.jpg" alt="Détail décoration" loading="lazy" />
-        </div>
-      </div>
+<!-- ── STATS ── -->
+<section class="stats-section">
+  <div class="stats-inner">
+    <div class="stat-item fade-in">
+      <div class="stat-num"><span class="counter" data-target="47">0</span></div>
+      <div class="stat-label">Avis voyageurs</div>
     </div>
-  </section>
+    <div class="stat-item fade-in stagger-1">
+      <div class="stat-num"><span class="counter" data-target="8" data-decimal=".7">0</span><sup>/10</sup></div>
+      <div class="stat-label">Note globale</div>
+    </div>
+    <div class="stat-item fade-in stagger-2">
+      <div class="stat-num"><span class="counter" data-target="9" data-decimal=".9">0</span></div>
+      <div class="stat-label">Note du personnel</div>
+    </div>
+    <div class="stat-item fade-in stagger-3">
+      <div class="stat-num"><span class="counter" data-target="10">0</span></div>
+      <div class="stat-label">Wi-Fi noté par Booking</div>
+    </div>
+  </div>
+</section>
 
-  <!-- ═══════════════════════════════════════════════════
-       CHAMBRE — DESCRIPTION
-  ═══════════════════════════════════════════════════ -->
-  <section class="section section-alt" id="chambre">
-    <div class="section-inner">
-      <div class="about-grid">
-        <div class="fade-in">
-          <span class="overline">La chambre</span>
-          <h2 class="h2" style="margin-top:.5rem">Un cocon<br />chaleureux</h2>
-          <p class="lead" style="margin-top:1rem">
-            Située au Clos Germanois, cette chambre privée offre tout le confort d'un hôtel avec la chaleur d'un vrai foyer. Lit douillet, literie de qualité, salle de bain privative — tout est là pour vous ressourcer.
-          </p>
+<!-- ── CHAMBRES & TARIFS ── -->
+<section class="section" id="chambres">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <span class="overline">Nos chambres</span>
+      <h2 class="h2">3 chambres, chacune son univers</h2>
+      <p class="lead">Réservez en direct et bénéficiez de la meilleure disponibilité — sans commission.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:2rem;margin-top:1rem">
 
-          <div class="about-features fade-in">
-            <div class="about-feature">
-              <div class="feature-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-              </div>
-              <div>
-                <div class="feature-title">Chambre privée</div>
-                <div class="feature-desc">Espace entièrement pour vous, avec clé et accès indépendant.</div>
-              </div>
-            </div>
-            <div class="about-feature">
-              <div class="feature-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
-              </div>
-              <div>
-                <div class="feature-title">Petit-déjeuner maison</div>
-                <div class="feature-desc">Préparé chaque matin avec des produits locaux et faits maison.</div>
-              </div>
-            </div>
-            <div class="about-feature">
-              <div class="feature-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div>
-                <div class="feature-title">Arrivée flexible</div>
-                <div class="feature-desc">Check-in dès 14h, check-out avant 11h. Horaires à adapter ensemble.</div>
-              </div>
-            </div>
+      <div class="fade-in" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column">
+        <div style="background:var(--bg-alt);height:180px;display:flex;align-items:center;justify-content:center;overflow:hidden">
+          <img src="photos/chambre-hinako.jpg" alt="Chambre Hinako" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'" />
+        </div>
+        <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;gap:.75rem">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem">
+            <h3 class="h3" style="margin:0">Chambre Hinako</h3>
+            <div style="font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:var(--accent)">77€<span style="font-size:.85rem;font-weight:400;color:var(--muted)">/nuit</span></div>
           </div>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.6;margin:0">Chambre à l'ambiance japonaise, épurée et apaisante. Idéale pour 1 ou 2 voyageurs.</p>
+          <a href="#reserver" class="btn btn-outline" style="margin-top:auto;text-align:center">Réserver cette chambre</a>
+        </div>
+      </div>
 
-          <div class="about-host fade-in" style="margin-top:2rem">
-            <div class="host-avatar">CG</div>
+      <div class="fade-in stagger-1" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column">
+        <div style="background:var(--bg-alt);height:180px;display:flex;align-items:center;justify-content:center;overflow:hidden">
+          <img src="photos/chambre-bora-bora.jpg" alt="Chambre Bora Bora" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'" />
+        </div>
+        <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;gap:.75rem">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem">
+            <h3 class="h3" style="margin:0">Chambre Bora Bora</h3>
+            <div style="font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:var(--accent)">77€<span style="font-size:.85rem;font-weight:400;color:var(--muted)">/nuit</span></div>
+          </div>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.6;margin:0">Dépaysement garanti avec la chambre Bora Bora, aux accents tropicaux et chaleureux.</p>
+          <a href="#reserver" class="btn btn-outline" style="margin-top:auto;text-align:center">Réserver cette chambre</a>
+        </div>
+      </div>
+
+      <div class="fade-in stagger-2" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column">
+        <div style="background:var(--bg-alt);height:180px;display:flex;align-items:center;justify-content:center;overflow:hidden">
+          <img src="photos/chambre-safari.jpg" alt="Chambre Safari" style="width:100%;height:100%;object-fit:cover" onerror="this.style.display='none'" />
+        </div>
+        <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;gap:.75rem">
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem">
+            <div style="display:flex;align-items:center;gap:.5rem">
+              <h3 class="h3" style="margin:0">Chambre Safari</h3>
+              <span style="background:var(--accent);color:#fff;font-size:.65rem;font-weight:600;padding:.2rem .5rem;border-radius:99px;text-transform:uppercase;letter-spacing:.05em">Familiale</span>
+            </div>
+            <div style="font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:var(--accent)">140€<span style="font-size:.85rem;font-weight:400;color:var(--muted)">/nuit</span></div>
+          </div>
+          <p style="color:var(--muted);font-size:.9rem;line-height:1.6;margin:0">La grande chambre familiale du Clos Germanois, à l'univers Safari. Parfaite pour les familles ou les séjours plus confortables.</p>
+          <a href="#reserver" class="btn btn-outline" style="margin-top:auto;text-align:center">Réserver cette chambre</a>
+        </div>
+      </div>
+
+    </div>
+    <p style="text-align:center;margin-top:2rem;font-size:.85rem;color:var(--muted)">Petit-déjeuner inclus · Parking gratuit · Borne recharge EV</p>
+  </div>
+</section>
+
+<!-- ── GALERIE ── -->
+<section class="section" id="galerie">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <span class="overline">Photos</span>
+      <h2 class="h2">La maison</h2>
+      <p class="lead">Un intérieur soigné où chaque chambre a son caractère — dont la fameuse chambre japonaise.</p>
+    </div>
+    <div class="gallery fade-in">
+      <div class="gallery-item" data-index="0">
+        <img src="photos/chambre-principale.jpg" alt="Chambre avec lit et tableau au mur" loading="lazy" />
+        <div class="gallery-zoom"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item" data-index="1">
+        <img src="photos/salle-bain.jpg" alt="Salle de bains avec baignoire et lavabo" loading="lazy" />
+        <div class="gallery-zoom"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item" data-index="2">
+        <img src="photos/cuisine.jpg" alt="Cuisine avec comptoir" loading="lazy" />
+        <div class="gallery-zoom"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item" data-index="3">
+        <img src="photos/petit-dejeuner.jpg" alt="Table avec assiette décorée" loading="lazy" />
+        <div class="gallery-zoom"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item" data-index="4">
+        <img src="photos/bureau.jpg" alt="Bureau avec lampe" loading="lazy" />
+        <div class="gallery-zoom"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item" data-index="5">
+        <img src="photos/exterieur.jpg" alt="Façade rue nationale" loading="lazy" />
+        <div class="gallery-zoom"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LIGHTBOX ── -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Photo en plein écran">
+  <button class="lightbox-close" id="lb-close" aria-label="Fermer">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <button class="lightbox-btn lightbox-prev" id="lb-prev" aria-label="Précédent">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <img class="lightbox-img" id="lb-img" src="" alt="" />
+  <button class="lightbox-btn lightbox-next" id="lb-next" aria-label="Suivant">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+  <div class="lightbox-counter" id="lb-dots"></div>
+</div>
+
+<!-- ── LA MAISON ── -->
+<section class="section section-alt" id="chambre">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <span class="overline fade-in">Notre maison</span>
+        <h2 class="h2 fade-in stagger-1" style="margin-top:.5rem">Posez vos valises,<br />vous êtes chez vous</h2>
+        <p class="lead fade-in stagger-2" style="margin-top:1rem">
+          Voyageurs nous-mêmes, nous savons qu'après une longue journée sur la route, le plus grand luxe est de pouvoir enfin poser ses valises, prendre une bonne douche et se reposer. C'est pourquoi nous proposons une table d'hôtes le soir et le petit-déjeuner dès 6h30.
+        </p>
+        <div class="about-features">
+          <div class="about-feature fade-in stagger-1">
+            <div class="feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+            </div>
             <div>
-              <div class="host-name">Murielle &amp; Sébastien</div>
-              <div class="host-label">Vos hôtes — Saint-Germain-Laval, Loire</div>
+              <div class="feature-title">Petit-déjeuner dès 6h30</div>
+              <div class="feature-desc">Continental, préparé sur place, adapté aux départs matinaux.</div>
+            </div>
+          </div>
+          <div class="about-feature fade-in stagger-2">
+            <div class="feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+            </div>
+            <div>
+              <div class="feature-title">Check-in très flexible</div>
+              <div class="feature-desc">Arrivée possible de 5h30 à 21h30 — idéal pour les voyageurs de route.</div>
+            </div>
+          </div>
+          <div class="about-feature fade-in stagger-3">
+            <div class="feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div>
+              <div class="feature-title">Sérénité sans écrans</div>
+              <div class="feature-desc">Pas de TV dans les chambres — sérénité et sommeil respecté. Bibliothèque de village à côté.</div>
             </div>
           </div>
         </div>
-
-        <div class="about-img fade-in">
-          <img src="photos/chambre-ambiance.jpg" alt="Ambiance de la chambre" />
+        <div class="about-host fade-in" style="margin-top:2rem">
+          <div class="host-avatar">CG</div>
+          <div>
+            <div class="host-name">Murielle &amp; Sébastien</div>
+            <div class="host-label">Vos hôtes · Français &amp; Polonais parlés · 79 rue Nationale</div>
+          </div>
         </div>
+      </div>
+      <div class="about-img fade-right">
+        <img src="photos/chambre-ambiance.jpg" alt="Chambre avec lustre" />
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══════════════════════════════════════════════════
-       ÉQUIPEMENTS
-  ═══════════════════════════════════════════════════ -->
-  <section class="section">
-    <div class="section-inner">
-      <div class="section-header fade-in">
-        <span class="overline">Équipements</span>
-        <h2 class="h2">Tout le nécessaire</h2>
-      </div>
-
-      <div class="amenities-grid fade-in">
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-          Wi-Fi gratuit
-        </div>
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
-          Télévision
-        </div>
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Salle de bain privée
-        </div>
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
-          Petit-déjeuner inclus
-        </div>
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          Bureau de travail
-        </div>
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          Linge de maison
-        </div>
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          Parking gratuit
-        </div>
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          Accès cuisine
-        </div>
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
-          Climatisation / Chauffage
-        </div>
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          Non-fumeur
-        </div>
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          Serviettes fournies
-        </div>
-        <div class="amenity-item">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Centre-ville à pied
-        </div>
-      </div>
+<!-- ── ÉQUIPEMENTS ── -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <span class="overline">Équipements</span>
+      <h2 class="h2">Tout pour votre confort</h2>
+      <p class="lead">Note équipements : 9/10 sur Booking.com</p>
     </div>
-  </section>
+    <div class="amenities-grid">
+      <div class="amenity-item fade-in"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>Wi-Fi 72 Mb/s gratuit</div>
+      <div class="amenity-item fade-in stagger-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>Parking gratuit (rue devant)</div>
+      <div class="amenity-item fade-in stagger-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-4"/><path d="M12 12h.01"/></svg>Borne recharge EV</div>
+      <div class="amenity-item fade-in stagger-3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>Petit-déjeuner inclus</div>
+      <div class="amenity-item fade-in"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Douche privée</div>
+      <div class="amenity-item fade-in stagger-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Linge &amp; serviettes</div>
+      <div class="amenity-item fade-in stagger-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>Sèche-cheveux</div>
+      <div class="amenity-item fade-in stagger-3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>Bouilloire &amp; infusions</div>
+      <div class="amenity-item fade-in"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Bureau &amp; prise au lit</div>
+      <div class="amenity-item fade-in stagger-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Chambres familiales</div>
+      <div class="amenity-item fade-in stagger-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Non-fumeur</div>
+      <div class="amenity-item fade-in stagger-3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Parquet &amp; chauffage</div>
+    </div>
+  </div>
+</section>
 
-  <!-- ═══════════════════════════════════════════════════
-       TARIFS
-  ═══════════════════════════════════════════════════ -->
-  <section class="section section-alt">
-    <div class="section-inner">
-      <div class="section-header fade-in">
-        <span class="overline">Tarifs</span>
-        <h2 class="h2">Prix transparents</h2>
-        <p class="lead">Réservez en direct et économisez les frais de plateforme.</p>
-      </div>
-
-      <div class="pricing-grid fade-in">
-        <div class="pricing-card">
-          <div class="pricing-label">Nuit semaine</div>
-          <div class="pricing-price">
-            <span class="price-num">[XX]</span>
-            <span class="price-unit">€ / nuit</span>
+<!-- ── TABLE D'HÔTES ── -->
+<section class="section section-dark" id="table-hotes">
+  <div class="section-inner">
+    <div class="about-grid" style="gap:var(--space-12)">
+      <div class="fade-in">
+        <span class="overline" style="color:var(--accent-soft)">Restaurant sur place</span>
+        <h2 class="h2 stagger-1" style="color:#fff;margin-top:.5rem">La table d'hôtes<br />du Clos Germanois</h2>
+        <p class="lead stagger-2" style="margin-top:1rem">
+          Le soir, sur réservation, Sébastien vous cuisine une table d'hôtes aux saveurs du terroir — et parfois, une spécialité polonaise maison qui a fait l'unanimité parmi nos voyageurs.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:1rem;margin-top:2rem">
+          <div class="rule-item fade-in stagger-1">
+            <div class="rule-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><div class="rule-title">Petit-déjeuner dès 6h30</div><div class="rule-desc">Continental, adapté aux départs matinaux.</div></div>
           </div>
-          <ul class="pricing-includes">
-            <li>Petit-déjeuner inclus</li>
-            <li>Wi-Fi haut débit</li>
-            <li>Linge & serviettes</li>
-            <li>Parking gratuit</li>
-          </ul>
-          <a href="#reserver" class="btn btn-outline" style="width:100%;justify-content:center">Réserver</a>
+          <div class="rule-item fade-in stagger-2">
+            <div class="rule-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></div>
+            <div><div class="rule-title">Dîner sur réservation</div><div class="rule-desc">Cuisine locale et polonaise, ambiance familiale.</div></div>
+          </div>
+          <div class="rule-item fade-in stagger-3">
+            <div class="rule-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+            <div><div class="rule-title">Ambiance familiale</div><div class="rule-desc">Partagez un moment d'échange ou profitez de votre tranquillité — à votre choix.</div></div>
+          </div>
         </div>
-
-        <div class="pricing-card featured">
-          <div class="pricing-badge">Meilleur tarif</div>
-          <div class="pricing-label">Week-end (ven–dim)</div>
-          <div class="pricing-price">
-            <span class="price-num">[XX]</span>
-            <span class="price-unit">€ / nuit</span>
-          </div>
-          <ul class="pricing-includes">
-            <li>Petit-déjeuner inclus</li>
-            <li>Wi-Fi haut débit</li>
-            <li>Linge & serviettes</li>
-            <li>Parking gratuit</li>
-            <li>Accueil personnalisé</li>
-          </ul>
-          <a href="#reserver" class="btn btn-primary" style="width:100%;justify-content:center">Réserver en direct</a>
-          <p class="pricing-note">Économisez jusqu'à 15% vs Booking.com</p>
-        </div>
-
-        <div class="pricing-card">
-          <div class="pricing-label">Séjour longue durée</div>
-          <div class="pricing-price">
-            <span class="price-num">–15%</span>
-          </div>
-          <ul class="pricing-includes">
-            <li>À partir de 7 nuits</li>
-            <li>Tarif négocié ensemble</li>
-            <li>Même confort inclus</li>
-            <li>Facture sur demande</li>
-          </ul>
-          <a href="https://wa.me/33623266950" target="_blank" class="btn btn-whatsapp" style="width:100%;justify-content:center">
+        <div style="margin-top:2rem">
+          <a href="https://wa.me/33623266950" target="_blank" rel="noopener" class="btn btn-whatsapp">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-            Contacter pour un devis
+            Réserver la table d'hôtes
+          </a>
+        </div>
+      </div>
+      <div class="about-img fade-right" style="height:400px">
+        <img src="photos/table-hotes.jpg" alt="Table d'hôtes du Clos Germanois" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── AVIS ── -->
+<section class="section" id="avis">
+  <div class="section-inner">
+    <div class="reviews-header fade-in">
+      <div class="rating-big">
+        <span class="rating-num">8.7</span>
+        <div>
+          <div class="rating-stars">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="rating-count">Superbe · 47 expériences vécues</div>
+        </div>
+      </div>
+      <div class="booking-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        Vérifié Booking.com
+      </div>
+    </div>
+
+    <!-- Sous-scores -->
+    <div class="scores-grid fade-in" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;margin-bottom:3rem">
+      <div class="score-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:1rem;text-align:center">
+        <div style="font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--accent);line-height:1">9.9</div>
+        <div style="font-size:.78rem;color:var(--muted);margin-top:.3rem;text-transform:uppercase;letter-spacing:.08em">Personnel</div>
+      </div>
+      <div class="score-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:1rem;text-align:center">
+        <div style="font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--accent);line-height:1">9.6</div>
+        <div style="font-size:.78rem;color:var(--muted);margin-top:.3rem;text-transform:uppercase;letter-spacing:.08em">Propreté</div>
+      </div>
+      <div class="score-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:1rem;text-align:center">
+        <div style="font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--accent);line-height:1">9.5</div>
+        <div style="font-size:.78rem;color:var(--muted);margin-top:.3rem;text-transform:uppercase;letter-spacing:.08em">Confort</div>
+      </div>
+      <div class="score-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:1rem;text-align:center">
+        <div style="font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--accent);line-height:1">9.4</div>
+        <div style="font-size:.78rem;color:var(--muted);margin-top:.3rem;text-transform:uppercase;letter-spacing:.08em">Emplacement</div>
+      </div>
+      <div class="score-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:1rem;text-align:center">
+        <div style="font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--accent);line-height:1">9.4</div>
+        <div style="font-size:.78rem;color:var(--muted);margin-top:.3rem;text-transform:uppercase;letter-spacing:.08em">Qualité/Prix</div>
+      </div>
+      <div class="score-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:1rem;text-align:center">
+        <div style="font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--accent);line-height:1">10</div>
+        <div style="font-size:.78rem;color:var(--muted);margin-top:.3rem;text-transform:uppercase;letter-spacing:.08em">Wi-Fi</div>
+      </div>
+    </div>
+
+    <div class="carousel fade-in">
+      <div class="carousel-track" id="carousel-track">
+        <div class="review-card">
+          <div class="review-header"><div class="reviewer-avatar">A</div><div><div class="reviewer-name">Alain</div><div class="reviewer-meta">France</div></div></div>
+          <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="review-text">L'accueil est très sympathique et chaleureux et les Hôtes sont charmants et accueillants.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header"><div class="reviewer-avatar">M</div><div><div class="reviewer-name">Maxence</div><div class="reviewer-meta">France</div></div></div>
+          <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="review-text">Nous avons passé un superbe moment dans ce bel endroit et en particulier grâce à Murielle et Sébastien. Ils nous ont même fait partager avec eux un délicieux dîner polonais. Mille mercis et au plaisir de vous revoir.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header"><div class="reviewer-avatar">D</div><div><div class="reviewer-name">Dany</div><div class="reviewer-meta">France</div></div></div>
+          <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="review-text">L'accueil, les chambres superbes, la disponibilité de Murielle, ses implications quant à nos besoins ou souhaits, la qualité des repas.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header"><div class="reviewer-avatar">C</div><div><div class="reviewer-name">Carine</div><div class="reviewer-meta">France</div></div></div>
+          <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="review-text">Très bon accueil et relations clients. Les chambres sont très propres, confortables avec une jolie décoration. La salle de bain et les toilettes sont très propres. Nous recommandons cet établissement.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header"><div class="reviewer-avatar">R</div><div><div class="reviewer-name">Régis</div><div class="reviewer-meta">France</div></div></div>
+          <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="review-text">Accueil très chaleureux alors même que je suis arrivé tard. Le logement est très soigné et très propre et la literie est impeccable.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header"><div class="reviewer-avatar">C</div><div><div class="reviewer-name">Christine</div><div class="reviewer-meta">France</div></div></div>
+          <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="review-text">Grand sens de l'hospitalité et générosité. Décor qui incite au voyage.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header"><div class="reviewer-avatar">C</div><div><div class="reviewer-name">Cosson</div><div class="reviewer-meta">France</div></div></div>
+          <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="review-text">La gentillesse des personnes, la propreté des lieux, la salle de bain trop top, la chambre japonaise trop jolie.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header"><div class="reviewer-avatar">L</div><div><div class="reviewer-name">Louisj</div><div class="reviewer-meta">France</div></div></div>
+          <div class="review-stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p class="review-text">L'accueil, la déco, le dîner, le petit-déj, la salle de bains.</p>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="carousel-prev" aria-label="Précédent"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+        <div class="carousel-dots" id="carousel-dots"></div>
+        <button class="carousel-btn" id="carousel-next" aria-label="Suivant"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:2rem">
+      <a href="https://www.booking.com/hotel/fr/clos-germanois.fr.html#tab-reviews" target="_blank" rel="noopener" class="btn btn-outline">Voir tous les avis sur Booking.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── RÈGLES ── -->
+<section class="section section-dark">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <span class="overline" style="color:var(--accent-soft)">Règles de la maison</span>
+      <h2 class="h2" style="color:#fff">Pour un séjour serein</h2>
+    </div>
+    <div class="rules-grid">
+      <div class="rule-item fade-in"><div class="rule-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="rule-title">Check-in : 5h30 – 21h30</div><div class="rule-desc">Très flexible — parfait pour les étapes de route.</div></div></div>
+      <div class="rule-item fade-in stagger-1"><div class="rule-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="rule-title">Check-out : 6h30 – 11h00</div><div class="rule-desc">Départ possible dès 6h30 pour les matinaux.</div></div></div>
+      <div class="rule-item fade-in stagger-2"><div class="rule-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><div><div class="rule-title">Calme : 22h – 6h</div><div class="rule-desc">Silence respecté pour le confort de tous.</div></div></div>
+      <div class="rule-item fade-in stagger-3"><div class="rule-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><line x1="2" y1="1" x2="23" y2="23"/></svg></div><div><div class="rule-title">Établissement non-fumeurs</div><div class="rule-desc">Intérieur entièrement non-fumeurs.</div></div></div>
+      <div class="rule-item fade-in"><div class="rule-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div><div><div class="rule-title">Pas de fêtes</div><div class="rule-desc">Les événements festifs ne sont pas autorisés.</div></div></div>
+      <div class="rule-item fade-in stagger-1"><div class="rule-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5"/><path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"/><path d="M8 14v.5"/><path d="M16 14v.5"/><path d="M11.25 16.25h1.5L12 17l-.75-.75z"/><path d="M4.42 20A8 8 0 0 0 20 12H4a8 8 0 0 0 .42 8z"/></svg></div><div><div class="rule-title">Animaux non admis</div><div class="rule-desc">Les animaux de compagnie ne sont pas acceptés.</div></div></div>
+      <div class="rule-item fade-in stagger-2"><div class="rule-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div><div><div class="rule-title">Alcool &amp; nourriture en chambre interdits</div><div class="rule-desc">La consommation d'alcool et de nourriture est réservée aux espaces communs.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SITUATION ── -->
+<section class="section" id="situation">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <span class="overline">Situation</span>
+      <h2 class="h2">L'étape parfaite sur l'A89</h2>
+      <p class="lead">79 rue Nationale, Saint-Germain-Laval (42260) — à 3,8 km de la sortie 32 de l'A89, au cœur du village médiéval.</p>
+    </div>
+    <div class="location-grid">
+      <div class="map-container fade-left">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=3.8133,45.7333,3.9533,45.8533&layer=mapnik&marker=45.793,3.833" title="Localisation du Clos Germanois à Saint-Germain-Laval" loading="lazy"></iframe>
+      </div>
+      <div class="fade-right">
+        <p style="font-size:.9rem;color:var(--muted);line-height:1.7;margin-bottom:1.5rem">Profitez de votre séjour pour découvrir le patrimoine exceptionnel du village : le Pont de Baffie (XIVe s.), la Chapelle Notre-Dame de Laval, le quartier médiéval et ses calades, les Églises de la Madeleine et Saint-André…</p>
+        <div class="nearby-list">
+          <div class="nearby-item"><div class="nearby-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><div><div class="nearby-name">Château de Boën-sur-Lignon</div><div class="nearby-dist">11 km</div></div></div>
+          <div class="nearby-item"><div class="nearby-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><div><div class="nearby-name">Château de Goutelas</div><div class="nearby-dist">15 km</div></div></div>
+          <div class="nearby-item"><div class="nearby-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><div><div class="nearby-name">La Bâtie d'Urfé &amp; Château de la Roche</div><div class="nearby-dist">15 – 16 km</div></div></div>
+          <div class="nearby-item"><div class="nearby-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><div><div class="nearby-name">Gare de Boën (train)</div><div class="nearby-dist">12 km</div></div></div>
+          <div class="nearby-item"><div class="nearby-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg></div><div><div class="nearby-name">Restaurant Le Savigny</div><div class="nearby-dist">4,6 km</div></div></div>
+          <div class="nearby-item"><div class="nearby-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div><div class="nearby-name">Aéroport Roanne-Renaison</div><div class="nearby-dist">30 km</div></div></div>
+        </div>
+        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+          <a href="https://maps.google.com/?q=79+rue+nationale,Saint-Germain-Laval,42260,France" target="_blank" rel="noopener" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Google Maps
+          </a>
+          <a href="https://www.booking.com/hotel/fr/clos-germanois.fr.html" target="_blank" rel="noopener" class="btn btn-booking">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+            Voir sur Booking
           </a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══════════════════════════════════════════════════
-       AVIS
-  ═══════════════════════════════════════════════════ -->
-  <section class="section" id="avis">
-    <div class="section-inner">
-      <div class="reviews-header fade-in">
-        <div class="rating-big">
-          <span class="rating-num">9.4</span>
-          <div>
-            <div class="rating-stars">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            </div>
-            <div class="rating-count">Exceptionnel · +[N] avis</div>
-          </div>
-        </div>
-        <div class="booking-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          Vérifié Booking.com
-        </div>
-      </div>
-
-      <div class="reviews-grid fade-in">
-        <div class="review-card">
-          <div class="review-header">
-            <div class="reviewer-avatar">M</div>
-            <div>
-              <div class="reviewer-name">Marie-Claire</div>
-              <div class="reviewer-meta">France · Avril 2025</div>
-            </div>
-          </div>
-          <div class="review-stars">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="review-text">Un séjour absolument parfait. L'accueil était chaleureux, la chambre propre et confortable, et le petit-déjeuner maison délicieux. Je recommande vivement !</p>
-        </div>
-
-        <div class="review-card">
-          <div class="review-header">
-            <div class="reviewer-avatar">T</div>
-            <div>
-              <div class="reviewer-name">Thomas</div>
-              <div class="reviewer-meta">Allemagne · Mars 2025</div>
-            </div>
-          </div>
-          <div class="review-stars">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="review-text">Très belle découverte. L'hôte est aux petits soins, la maison est très bien située, et on se sent vraiment chez soi. Une adresse à garder précieusement.</p>
-        </div>
-
-        <div class="review-card">
-          <div class="review-header">
-            <div class="reviewer-avatar">S</div>
-            <div>
-              <div class="reviewer-name">Sophie & Luc</div>
-              <div class="reviewer-meta">Belgique · Février 2025</div>
-            </div>
-          </div>
-          <div class="review-stars">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <p class="review-text">On a passé un week-end magnifique. La chambre est exactement comme sur les photos — peut-être encore plus belle en vrai. On reviendra sans hésiter.</p>
-        </div>
-      </div>
+<!-- ── RÉSERVER ── -->
+<section class="section section-alt" id="reserver">
+  <div class="section-inner">
+    <div class="section-header fade-in">
+      <span class="overline">Réservation</span>
+      <h2 class="h2">Réservez votre étape</h2>
+      <p class="lead">En direct ou via Booking.com — Murielle ou Sébastien vous répondent rapidement.</p>
     </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════
-       RÈGLES DE LA MAISON
-  ═══════════════════════════════════════════════════ -->
-  <section class="section section-dark">
-    <div class="section-inner">
-      <div class="section-header fade-in">
-        <span class="overline" style="color:var(--accent-soft)">Règles</span>
-        <h2 class="h2" style="color:#fff">Pour un séjour serein</h2>
-        <p class="lead">Quelques règles simples pour le bien-être de tous.</p>
-      </div>
-
-      <div class="rules-grid fade-in">
-        <div class="rule-item">
-          <div class="rule-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div>
-            <div class="rule-title">Check-in : 14h – 20h</div>
-            <div class="rule-desc">Merci de prévenir en cas de retard.</div>
-          </div>
-        </div>
-        <div class="rule-item">
-          <div class="rule-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div>
-            <div class="rule-title">Check-out : avant 11h</div>
-            <div class="rule-desc">À adapter sur demande selon disponibilité.</div>
-          </div>
-        </div>
-        <div class="rule-item">
-          <div class="rule-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><line x1="2" y1="1" x2="23" y2="23"/></svg>
-          </div>
-          <div>
-            <div class="rule-title">Non-fumeur</div>
-            <div class="rule-desc">Interdiction de fumer à l'intérieur.</div>
-          </div>
-        </div>
-        <div class="rule-item">
-          <div class="rule-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-          </div>
-          <div>
-            <div class="rule-title">Pas de fêtes</div>
-            <div class="rule-desc">Maison calme et résidentielle.</div>
-          </div>
-        </div>
-        <div class="rule-item">
-          <div class="rule-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-          </div>
-          <div>
-            <div class="rule-title">Animaux : à discuter</div>
-            <div class="rule-desc">Contactez-moi avant de réserver.</div>
-          </div>
-        </div>
-        <div class="rule-item">
-          <div class="rule-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <div>
-            <div class="rule-title">Respect des lieux</div>
-            <div class="rule-desc">Traiter la maison comme la vôtre.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════
-       SITUATION
-  ═══════════════════════════════════════════════════ -->
-  <section class="section" id="situation">
-    <div class="section-inner">
-      <div class="section-header fade-in">
-        <span class="overline">Situation</span>
-        <h2 class="h2">Bien placé pour tout explorer</h2>
-        <p class="lead">À deux pas des commerces, restaurants et attractions de Saint-Germain-Laval, au cœur de la Loire, Rhône-Alpes.</p>
-      </div>
-
-      <div class="location-grid fade-in">
-        <div class="map-container">
-          <!-- Remplacez [LATITUDE] et [LONGITUDE] par les vraies coordonnées -->
-          <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=3.8133,45.7333,3.9533,45.8533&layer=mapnik&marker=45.793,3.833"
-            title="Localisation du Clos Germanois à Saint-Germain-Laval"
-            loading="lazy"
-          ></iframe>
-        </div>
-
-        <div>
-          <div class="nearby-list">
-            <div class="nearby-item">
-              <div class="nearby-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-              </div>
-              <div>
-                <div class="nearby-name">Centre-ville de Saint-Germain-Laval</div>
-                <div class="nearby-dist">5 min à pied</div>
-              </div>
-            </div>
-            <div class="nearby-item">
-              <div class="nearby-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-              </div>
-              <div>
-                <div class="nearby-name">Gare / Arrêt de bus</div>
-                <div class="nearby-dist">10 min à pied</div>
-              </div>
-            </div>
-            <div class="nearby-item">
-              <div class="nearby-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
-              </div>
-              <div>
-                <div class="nearby-name">Restaurants & cafés</div>
-                <div class="nearby-dist">2 min à pied</div>
-              </div>
-            </div>
-            <div class="nearby-item">
-              <div class="nearby-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-              </div>
-              <div>
-                <div class="nearby-name">Supermarchés</div>
-                <div class="nearby-dist">5 min à pied</div>
-              </div>
-            </div>
-            <div class="nearby-item">
-              <div class="nearby-icon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              </div>
-              <div>
-                <div class="nearby-name">Sites touristiques</div>
-                <div class="nearby-dist">À préciser selon Saint-Germain-Laval</div>
-              </div>
-            </div>
-          </div>
-
-          <div style="margin-top:2rem">
-            <a href="https://maps.google.com/?q=Clos+Germanois,Saint-Germain-Laval,42260,France" target="_blank" rel="noopener" class="btn btn-outline">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Voir sur Google Maps
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════
-       RÉSERVER / CONTACT
-  ═══════════════════════════════════════════════════ -->
-  <section class="section section-alt" id="reserver">
-    <div class="section-inner">
-      <div class="section-header fade-in">
-        <span class="overline">Réservation</span>
-        <h2 class="h2">Réservez votre séjour</h2>
-        <p class="lead">En direct ou via Booking.com — je vous réponds sous 24h.</p>
-      </div>
-
-      <div class="book-grid fade-in">
-        <div class="book-card">
-          <h3 class="h3">Envoyer un message</h3>
-          <form action="mailto:[EMAIL_A_CONFIRMER]" method="post" enctype="text/plain">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Marie" required />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" class="form-input" placeholder="Dupont" required />
-              </div>
+    <div class="book-grid">
+      <div class="book-card fade-left">
+        <h3 class="h3">Envoyer un message</h3>
+        <form id="contact-form" novalidate action="https://formspree.io/f/REMPLACER_PAR_TON_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="prenom">Prénom</label>
+              <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Marie" required />
+              <span class="form-error" id="err-prenom">Merci d'indiquer votre prénom.</span>
             </div>
             <div class="form-group">
-              <label class="form-label" for="email">Email</label>
-              <input type="email" id="email" name="email" class="form-input" placeholder="marie@exemple.fr" required />
+              <label class="form-label" for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" class="form-input" placeholder="Dupont" required />
+              <span class="form-error" id="err-nom">Merci d'indiquer votre nom.</span>
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="arrivee">Date d'arrivée</label>
-                <input type="date" id="arrivee" name="arrivee" class="form-input" required />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="depart">Date de départ</label>
-                <input type="date" id="depart" name="depart" class="form-input" required />
-              </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="marie@exemple.fr" required />
+            <span class="form-error" id="err-email">Adresse email invalide.</span>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="arrivee">Date d'arrivée</label>
+              <input type="date" id="arrivee" name="arrivee" class="form-input" required />
+              <span class="form-error" id="err-arrivee">Veuillez choisir une date.</span>
             </div>
             <div class="form-group">
-              <label class="form-label" for="personnes">Nombre de personnes</label>
-              <select id="personnes" name="personnes" class="form-input">
-                <option value="1">1 personne</option>
-                <option value="2" selected>2 personnes</option>
-              </select>
+              <label class="form-label" for="depart">Date de départ</label>
+              <input type="date" id="depart" name="depart" class="form-input" required />
+              <span class="form-error" id="err-depart">Veuillez choisir une date.</span>
             </div>
-            <div class="form-group">
-              <label class="form-label" for="message">Message (optionnel)</label>
-              <textarea id="message" name="message" class="form-input" placeholder="Questions, demandes particulières..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary form-submit btn-lg">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-              Envoyer la demande
-            </button>
-          </form>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="personnes">Voyageurs</label>
+            <select id="personnes" name="personnes" class="form-input">
+              <option value="1">1 personne</option>
+              <option value="2" selected>2 personnes</option>
+              <option value="3">3 personnes</option>
+              <option value="4">4 personnes (familiale)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message (optionnel)</label>
+            <textarea id="message" name="message" class="form-input" placeholder="Heure d'arrivée prévue, demande de table d'hôtes, besoins particuliers…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg form-submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Envoyer la demande
+          </button>
+          <div class="form-success" id="form-success">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto var(--space-3);color:var(--sage)"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <strong>Message envoyé !</strong><br />
+            Murielle ou Sébastien vous répondront très rapidement.
+          </div>
+        </form>
+      </div>
+      <div class="book-info fade-right">
+        <div class="book-cta-card">
+          <h4 class="h4">Via WhatsApp</h4>
+          <p>Réponse rapide garantie. Écrivez directement à Murielle ou Sébastien pour vérifier les disponibilités ou réserver la table d'hôtes.</p>
+          <p style="font-size:.82rem;color:var(--muted);margin-top:.5rem">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:.3rem"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Sans frais de réservation ni de carte de crédit
+          </p>
+          <a href="https://wa.me/33623266950" target="_blank" rel="noopener" class="btn btn-whatsapp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            Écrire sur WhatsApp
+          </a>
         </div>
-
-        <div class="book-info">
-          <div class="book-cta-card">
-            <h4 class="h4">Via WhatsApp</h4>
-            <p>Réponse rapide garantie. Écrivez-moi directement pour vérifier les disponibilités.</p>
-            <a href="https://wa.me/33623266950" target="_blank" rel="noopener" class="btn btn-whatsapp">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-              Écrire sur WhatsApp
-            </a>
-          </div>
-
-          <div class="book-or">— ou —</div>
-
-          <div class="book-cta-card">
-            <h4 class="h4">Via Booking.com</h4>
-            <p>Paiement sécurisé, annulation flexible. Retrouvez l'annonce complète sur la plateforme.</p>
-            <a href="https://www.booking.com" target="_blank" rel="noopener" class="btn btn-booking">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              Réserver sur Booking
-            </a>
-          </div>
+        <div class="book-or">— ou —</div>
+        <div class="book-cta-card">
+          <h4 class="h4">Via Booking.com</h4>
+          <p>Paiement sécurisé, annulation flexible. Retrouvez toutes les disponibilités et les tarifs sur Booking.com.</p>
+          <a href="https://www.booking.com/hotel/fr/clos-germanois.fr.html" target="_blank" rel="noopener" class="btn btn-booking">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Réserver sur Booking.com
+          </a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══════════════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════════════ -->
-  <footer class="footer">
-    <div class="footer-logo">Clos Germanois<span>.</span></div>
-    <p class="footer-text">
-      Chambre chez l'habitant à Saint-Germain-Laval (42260), Loire — Rhône-Alpes<br />
-      Murielle &amp; Sébastien vous accueillent chaleureusement.
-    </p>
-    <nav class="footer-links">
-      <a href="#chambre">La chambre</a>
-      <a href="#galerie">Galerie</a>
-      <a href="#avis">Avis</a>
-      <a href="#situation">Situation</a>
-      <a href="#reserver">Réserver</a>
-    </nav>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Clos Germanois · Saint-Germain-Laval (42260), Loire · Murielle &amp; Sébastien</p>
-    </div>
-  </footer>
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="footer-logo">Clos Germanois<span>.</span></div>
+  <p class="footer-text">
+    79 rue Nationale · Saint-Germain-Laval (42260) · Loire, Auvergne-Rhône-Alpes<br />
+    Murielle &amp; Sébastien · Français &amp; Polonais · À 2 min de l'A89 sortie 32
+  </p>
+  <nav class="footer-links">
+    <a href="#chambre">La Maison</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#table-hotes">Table d'hôtes</a>
+    <a href="#avis">Avis</a>
+    <a href="#situation">Situation</a>
+    <a href="#reserver">Réserver</a>
+  </nav>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Clos Germanois · Saint-Germain-Laval (42260) · <a href="https://www.booking.com/hotel/fr/clos-germanois.fr.html" target="_blank" rel="noopener" style="color:rgba(255,255,255,.3);text-decoration:none">Voir sur Booking.com</a></p>
+  </div>
+</footer>
 
-  <!-- ═══════════════════════════════════════════════════
-       JS
-  ═══════════════════════════════════════════════════ -->
-  <script>
-    // Nav scroll effect
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 40);
-    }, { passive: true });
+<!-- ── FAB ── -->
+<div class="fab" id="fab">
+  <a href="#reserver" class="fab-btn">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    <span>Réserver</span>
+  </a>
+</div>
 
-    // Fade-in on scroll
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-    );
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
+<!-- ── BACK TO TOP ── -->
+<button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
 
+<script>
+(function () {
+  'use strict';
+
+  const progress = document.getElementById('scroll-progress');
+  const nav = document.getElementById('nav');
+  const fab = document.getElementById('fab');
+  const btt = document.getElementById('back-to-top');
+  const heroEl = document.getElementById('hero');
+  const heroParallax = document.getElementById('hero-parallax');
+
+  function onScroll() {
+    const s = window.scrollY;
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (h > 0 ? (s / h) * 100 : 0) + '%';
+    nav.classList.toggle('scrolled', s > 60);
+    fab.classList.toggle('visible', s > heroEl.offsetHeight * 0.6);
+    btt.classList.toggle('visible', s > 400);
+    if (s < window.innerHeight * 1.2)
+      heroParallax.style.transform = 'translateY(' + (s * 0.28) + 'px)';
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const overlay = document.getElementById('menu-overlay');
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.classList.toggle('open');
+    overlay.classList.toggle('open', open);
+    document.body.classList.toggle('no-scroll', open);
+  });
+  overlay.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.classList.remove('no-scroll');
+  }));
+
+  // Scroll animations
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.fade-in, .fade-left, .fade-right').forEach(el => io.observe(el));
+
+  // Counters
+  const cio = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, target = parseFloat(el.dataset.target), dec = el.dataset.decimal || '', dur = 1800, start = performance.now();
+      const step = now => {
+        const t = Math.min((now - start) / dur, 1), ease = 1 - Math.pow(1 - t, 3);
+        el.textContent = Math.round(target * ease) + dec;
+        if (t < 1) requestAnimationFrame(step); else el.textContent = target + dec;
+      };
+      requestAnimationFrame(step);
+      cio.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.counter').forEach(c => cio.observe(c));
+
+  // Lightbox
+  const items = document.querySelectorAll('.gallery-item');
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lb-img');
+  const lbDots = document.getElementById('lb-dots');
+  const imgs = Array.from(items).map(i => ({ src: i.querySelector('img').src, alt: i.querySelector('img').alt }));
+  let lbIdx = 0;
+  const lbDraw = () => {
+    lbImg.src = imgs[lbIdx].src; lbImg.alt = imgs[lbIdx].alt;
+    lbDots.innerHTML = imgs.map((_, i) => `<span class="lightbox-dot${i===lbIdx?' active':''}" data-i="${i}"></span>`).join('');
+    lbDots.querySelectorAll('.lightbox-dot').forEach(d => d.addEventListener('click', () => { lbIdx = +d.dataset.i; lbDraw(); }));
+  };
+  const lbOpen = i => { lbIdx = i; lbDraw(); lb.classList.add('open'); document.body.classList.add('no-scroll'); };
+  const lbClose = () => { lb.classList.remove('open'); document.body.classList.remove('no-scroll'); };
+  items.forEach((it, i) => it.addEventListener('click', () => lbOpen(i)));
+  document.getElementById('lb-close').addEventListener('click', lbClose);
+  lb.addEventListener('click', e => { if (e.target === lb) lbClose(); });
+  document.getElementById('lb-prev').addEventListener('click', () => { lbIdx = (lbIdx - 1 + imgs.length) % imgs.length; lbDraw(); });
+  document.getElementById('lb-next').addEventListener('click', () => { lbIdx = (lbIdx + 1) % imgs.length; lbDraw(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') lbClose();
+    if (e.key === 'ArrowLeft') { lbIdx = (lbIdx - 1 + imgs.length) % imgs.length; lbDraw(); }
+    if (e.key === 'ArrowRight') { lbIdx = (lbIdx + 1) % imgs.length; lbDraw(); }
+  });
+
+  // Carousel
+  const track = document.getElementById('carousel-track');
+  const dotsC = document.getElementById('carousel-dots');
+  const cards = track.querySelectorAll('.review-card');
+  let cIdx = 0, autoT;
+  const vis = () => window.innerWidth <= 600 ? 1 : window.innerWidth <= 900 ? 2 : 3;
+  const pages = () => Math.ceil(cards.length / vis());
+  const drawDots = () => {
+    dotsC.innerHTML = Array.from({ length: pages() }, (_, i) => `<span class="carousel-dot${i===cIdx?' active':''}" data-p="${i}"></span>`).join('');
+    dotsC.querySelectorAll('.carousel-dot').forEach(d => d.addEventListener('click', () => go(+d.dataset.p)));
+  };
+  const go = p => {
+    cIdx = Math.max(0, Math.min(p, pages() - 1));
+    const w = cards[0].offsetWidth + parseInt(getComputedStyle(track).gap || 24);
+    track.style.transform = `translateX(-${cIdx * vis() * w}px)`;
+    drawDots();
+    document.getElementById('carousel-prev').disabled = cIdx === 0;
+    document.getElementById('carousel-next').disabled = cIdx >= pages() - 1;
+    clearInterval(autoT); autoT = setInterval(() => go((cIdx + 1) % pages()), 5000);
+  };
+  document.getElementById('carousel-prev').addEventListener('click', () => go(cIdx - 1));
+  document.getElementById('carousel-next').addEventListener('click', () => go(cIdx + 1));
+  drawDots(); go(0);
+  window.addEventListener('resize', () => go(0));
+  let tx = 0;
+  track.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener('touchend', e => { const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 50) go(dx < 0 ? cIdx + 1 : cIdx - 1); });
+
+  // Form
+  const form = document.getElementById('contact-form');
+  const succ = document.getElementById('form-success');
+  const val = inp => {
+    const err = document.getElementById('err-' + inp.id);
+    let ok = !inp.required || !!inp.value.trim();
+    if (inp.type === 'email' && inp.value) ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inp.value);
+    if (err) err.classList.toggle('show', !ok);
+    inp.classList.toggle('error', !ok);
+    inp.classList.toggle('valid', ok && !!inp.value.trim());
+    return ok;
+  };
+  form.querySelectorAll('.form-input[required]').forEach(i => { i.addEventListener('blur', () => val(i)); i.addEventListener('input', () => { if (i.classList.contains('error')) val(i); }); });
+  const formErrGlobal = document.createElement('div');
+  formErrGlobal.id = 'form-err-global';
+  formErrGlobal.style.cssText = 'display:none;color:#c0392b;margin-top:.75rem;font-size:.9rem;text-align:center';
+  form.querySelector('.form-submit').insertAdjacentElement('afterend', formErrGlobal);
+  const btn = form.querySelector('.form-submit');
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    formErrGlobal.style.display = 'none';
+    if (![...form.querySelectorAll('.form-input[required]')].map(val).every(Boolean)) return;
+    btn.disabled = true;
+    btn.textContent = 'Envoi en cours…';
+    try {
+      const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+      if (res.ok) { form.style.display = 'none'; succ.classList.add('show'); }
+      else { const d = await res.json(); formErrGlobal.textContent = d.errors ? d.errors.map(x => x.message).join(', ') : 'Erreur d\'envoi. Réessayez.'; formErrGlobal.style.display = 'block'; btn.disabled = false; btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Envoyer la demande'; }
+    } catch { formErrGlobal.textContent = 'Pas de connexion. Vérifiez votre réseau et réessayez.'; formErrGlobal.style.display = 'block'; btn.disabled = false; btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Envoyer la demande'; }
+  });
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('arrivee').min = today;
+  document.getElementById('depart').min = today;
+  document.getElementById('arrivee').addEventListener('change', () => { document.getElementById('depart').min = document.getElementById('arrivee').value; });
+
+})();
+</script>
 </body>
 </html>
