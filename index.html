@@ -7,8 +7,27 @@
   <meta name="description" content="Chambre chez l'habitant à Saint-Germain-Laval, à 2 min de l'A89 sortie 32. Étape idéale entre Lyon, Clermont-Ferrand et Saint-Étienne. Table d'hôtes, petit-déjeuner dès 6h30. Note 8.7/10 · 47 avis." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "@material/web/": "https://esm.run/@material/web/"
+    }
+  }
+  </script>
+  <script type="module">
+    import 'https://esm.run/@material/web/button/filled-button.js';
+    import 'https://esm.run/@material/web/button/outlined-button.js';
+    import 'https://esm.run/@material/web/chips/assist-chip.js';
+    import 'https://esm.run/@material/web/chips/chip-set.js';
+    import 'https://esm.run/@material/web/textfield/outlined-text-field.js';
+    import 'https://esm.run/@material/web/select/outlined-select.js';
+    import 'https://esm.run/@material/web/select/select-option.js';
+    import 'https://esm.run/@material/web/fab/fab.js';
+    import 'https://esm.run/@material/web/divider/divider.js';
+    import 'https://esm.run/@material/web/iconbutton/icon-button.js';
+  </script>
 </head>
 <body class="spa">
 
@@ -51,7 +70,7 @@
     <li><a href="#" data-page="page-table">Table d'hôtes</a></li>
     <li><a href="#" data-page="page-avis">Avis</a></li>
     <li><a href="#" data-page="page-situation">Situation</a></li>
-    <li><a href="#" data-page="page-reserver" class="btn btn-primary nav-cta">Réserver</a></li>
+    <li><md-filled-button data-page="page-reserver" class="nav-cta">Réserver</md-filled-button></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -80,14 +99,14 @@
           79 rue Nationale, Saint-Germain-Laval — Murielle &amp; Sébastien vous accueillent dans leur maison chargée de caractère. Table d'hôtes le soir sur réservation, petit-déjeuner dès 6h30, parking gratuit. Posez vos valises, vous êtes chez vous.
         </p>
         <div class="hero-cta">
-          <a href="#" data-page="page-reserver" class="btn btn-primary btn-lg">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <md-filled-button data-page="page-reserver" class="btn-lg">
+            <svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             Réserver en direct
-          </a>
-          <a href="https://www.booking.com/hotel/fr/clos-germanois.fr.html" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </md-filled-button>
+          <md-outlined-button class="ghost btn-lg" href="https://www.booking.com/hotel/fr/clos-germanois.fr.html" target="_blank" rel="noopener">
+            <svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             Voir sur Booking
-          </a>
+          </md-outlined-button>
         </div>
         <div class="hero-meta">
           <div class="hero-meta-item">
@@ -200,20 +219,20 @@
           <h2 class="h2">Tout pour votre confort</h2>
           <p class="lead">Note équipements : 9/10 sur Booking.com</p>
         </div>
-        <div class="amenities-grid">
-          <div class="amenity-item fade-in"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>Wi-Fi 72 Mb/s gratuit</div>
-          <div class="amenity-item fade-in stagger-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>Parking gratuit (rue devant)</div>
-          <div class="amenity-item fade-in stagger-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-4"/><path d="M12 12h.01"/></svg>Borne recharge EV</div>
-          <div class="amenity-item fade-in stagger-3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>Petit-déjeuner inclus</div>
-          <div class="amenity-item fade-in"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Douche privée</div>
-          <div class="amenity-item fade-in stagger-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Linge &amp; serviettes</div>
-          <div class="amenity-item fade-in stagger-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>Sèche-cheveux</div>
-          <div class="amenity-item fade-in stagger-3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>Bouilloire &amp; infusions</div>
-          <div class="amenity-item fade-in"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Bureau &amp; prise au lit</div>
-          <div class="amenity-item fade-in stagger-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Chambres familiales</div>
-          <div class="amenity-item fade-in stagger-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Non-fumeur</div>
-          <div class="amenity-item fade-in stagger-3"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>Parquet &amp; chauffage</div>
-        </div>
+        <md-chip-set class="amenities-chips fade-in">
+          <md-assist-chip label="Wi-Fi 72 Mb/s gratuit"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></md-assist-chip>
+          <md-assist-chip label="Parking gratuit (rue devant)"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg></md-assist-chip>
+          <md-assist-chip label="Borne recharge EV"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-4"/><path d="M12 12h.01"/></svg></md-assist-chip>
+          <md-assist-chip label="Petit-déjeuner inclus"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg></md-assist-chip>
+          <md-assist-chip label="Douche privée"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></md-assist-chip>
+          <md-assist-chip label="Linge &amp; serviettes"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></md-assist-chip>
+          <md-assist-chip label="Sèche-cheveux"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></md-assist-chip>
+          <md-assist-chip label="Bouilloire &amp; infusions"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></md-assist-chip>
+          <md-assist-chip label="Bureau &amp; prise au lit"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></md-assist-chip>
+          <md-assist-chip label="Chambres familiales"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></md-assist-chip>
+          <md-assist-chip label="Non-fumeur"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></md-assist-chip>
+          <md-assist-chip label="Parquet &amp; chauffage"><svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></md-assist-chip>
+        </md-chip-set>
       </div>
     </section>
 
@@ -241,7 +260,7 @@
                 <div style="font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:var(--accent)">77€<span style="font-size:.85rem;font-weight:400;color:var(--muted)">/nuit</span></div>
               </div>
               <p style="color:var(--muted);font-size:.9rem;line-height:1.6;margin:0">Chambre à l'ambiance japonaise, épurée et apaisante. Idéale pour 1 ou 2 voyageurs.</p>
-              <a href="#" data-page="page-reserver" class="btn btn-outline" style="margin-top:auto;text-align:center">Réserver cette chambre</a>
+              <md-outlined-button data-page="page-reserver" style="margin-top:auto;width:100%">Réserver cette chambre</md-outlined-button>
             </div>
           </div>
 
@@ -255,7 +274,7 @@
                 <div style="font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:var(--accent)">77€<span style="font-size:.85rem;font-weight:400;color:var(--muted)">/nuit</span></div>
               </div>
               <p style="color:var(--muted);font-size:.9rem;line-height:1.6;margin:0">Dépaysement garanti avec la chambre Bora Bora, aux accents tropicaux et chaleureux.</p>
-              <a href="#" data-page="page-reserver" class="btn btn-outline" style="margin-top:auto;text-align:center">Réserver cette chambre</a>
+              <md-outlined-button data-page="page-reserver" style="margin-top:auto;width:100%">Réserver cette chambre</md-outlined-button>
             </div>
           </div>
 
@@ -272,7 +291,7 @@
                 <div style="font-family:var(--font-head);font-size:1.5rem;font-weight:700;color:var(--accent)">140€<span style="font-size:.85rem;font-weight:400;color:var(--muted)">/nuit</span></div>
               </div>
               <p style="color:var(--muted);font-size:.9rem;line-height:1.6;margin:0">La grande chambre familiale du Clos Germanois, à l'univers Safari. Parfaite pour les familles ou les séjours plus confortables.</p>
-              <a href="#" data-page="page-reserver" class="btn btn-outline" style="margin-top:auto;text-align:center">Réserver cette chambre</a>
+              <md-outlined-button data-page="page-reserver" style="margin-top:auto;width:100%">Réserver cette chambre</md-outlined-button>
             </div>
           </div>
 
@@ -487,7 +506,7 @@
         </div>
 
         <div style="text-align:center;margin-top:2rem">
-          <a href="https://www.booking.com/hotel/fr/clos-germanois.fr.html#tab-reviews" target="_blank" rel="noopener" class="btn btn-outline">Voir tous les avis sur Booking.com</a>
+          <md-outlined-button href="https://www.booking.com/hotel/fr/clos-germanois.fr.html#tab-reviews" target="_blank" rel="noopener">Voir tous les avis sur Booking.com</md-outlined-button>
         </div>
       </div>
     </section>
@@ -519,10 +538,10 @@
               <div class="nearby-item"><div class="nearby-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div><div class="nearby-name">Aéroport Roanne-Renaison</div><div class="nearby-dist">30 km</div></div></div>
             </div>
             <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
-              <a href="https://maps.google.com/?q=79+rue+nationale,Saint-Germain-Laval,42260,France" target="_blank" rel="noopener" class="btn btn-outline">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <md-outlined-button href="https://maps.google.com/?q=79+rue+nationale,Saint-Germain-Laval,42260,France" target="_blank" rel="noopener">
+                <svg slot="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 Google Maps
-              </a>
+              </md-outlined-button>
               <a href="https://www.booking.com/hotel/fr/clos-germanois.fr.html" target="_blank" rel="noopener" class="btn btn-booking">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
                 Voir sur Booking
@@ -550,51 +569,33 @@
             <h3 class="h3">Envoyer un message</h3>
             <form id="contact-form" novalidate action="https://formspree.io/f/REMPLACER_PAR_TON_ID" method="POST">
               <div class="form-row">
-                <div class="form-group">
-                  <label class="form-label" for="prenom">Prénom</label>
-                  <input type="text" id="prenom" name="prenom" class="form-input" placeholder="Marie" required />
-                  <span class="form-error" id="err-prenom">Merci d'indiquer votre prénom.</span>
-                </div>
-                <div class="form-group">
-                  <label class="form-label" for="nom">Nom</label>
-                  <input type="text" id="nom" name="nom" class="form-input" placeholder="Dupont" required />
-                  <span class="form-error" id="err-nom">Merci d'indiquer votre nom.</span>
-                </div>
+                <md-outlined-text-field id="prenom" name="prenom" label="Prénom" placeholder="Marie" required style="flex:1"></md-outlined-text-field>
+                <md-outlined-text-field id="nom" name="nom" label="Nom" placeholder="Dupont" required style="flex:1"></md-outlined-text-field>
               </div>
-              <div class="form-group">
-                <label class="form-label" for="email">Email</label>
-                <input type="email" id="email" name="email" class="form-input" placeholder="marie@exemple.fr" required />
-                <span class="form-error" id="err-email">Adresse email invalide.</span>
-              </div>
+              <md-outlined-text-field type="email" id="email" name="email" label="Email" placeholder="marie@exemple.fr" required></md-outlined-text-field>
               <div class="form-row">
-                <div class="form-group">
+                <div class="form-group" style="flex:1">
                   <label class="form-label" for="arrivee">Date d'arrivée</label>
                   <input type="date" id="arrivee" name="arrivee" class="form-input" required />
                   <span class="form-error" id="err-arrivee">Veuillez choisir une date.</span>
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="flex:1">
                   <label class="form-label" for="depart">Date de départ</label>
                   <input type="date" id="depart" name="depart" class="form-input" required />
                   <span class="form-error" id="err-depart">Veuillez choisir une date.</span>
                 </div>
               </div>
-              <div class="form-group">
-                <label class="form-label" for="personnes">Voyageurs</label>
-                <select id="personnes" name="personnes" class="form-input">
-                  <option value="1">1 personne</option>
-                  <option value="2" selected>2 personnes</option>
-                  <option value="3">3 personnes</option>
-                  <option value="4">4 personnes (familiale)</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="message">Message (optionnel)</label>
-                <textarea id="message" name="message" class="form-input" placeholder="Heure d'arrivée prévue, demande de table d'hôtes, besoins particuliers…"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-lg form-submit">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              <md-outlined-select id="personnes" name="personnes" label="Voyageurs">
+                <md-select-option value="1"><div slot="headline">1 personne</div></md-select-option>
+                <md-select-option value="2" selected><div slot="headline">2 personnes</div></md-select-option>
+                <md-select-option value="3"><div slot="headline">3 personnes</div></md-select-option>
+                <md-select-option value="4"><div slot="headline">4 personnes (familiale)</div></md-select-option>
+              </md-outlined-select>
+              <md-outlined-text-field type="textarea" id="message" name="message" label="Message (optionnel)" placeholder="Heure d'arrivée prévue, demande de table d'hôtes, besoins particuliers…" rows="4"></md-outlined-text-field>
+              <md-filled-button type="submit" class="form-submit btn-lg">
+                <svg slot="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                 Envoyer la demande
-              </button>
+              </md-filled-button>
               <div class="form-success" id="form-success">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto var(--space-3);color:var(--sage)"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 <strong>Message envoyé !</strong><br />
@@ -670,12 +671,9 @@
 </div>
 
 <!-- ── FAB ── -->
-<div class="fab" id="fab">
-  <a href="#" data-page="page-reserver" class="fab-btn">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-    <span>Réserver</span>
-  </a>
-</div>
+<md-fab id="fab" variant="primary" label="Réserver" data-page="page-reserver">
+  <svg slot="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+</md-fab>
 
 <!-- ── BACK TO TOP ── -->
 <button class="back-to-top" id="back-to-top" aria-label="Retour en haut">
@@ -859,36 +857,70 @@
   // ── CONTACT FORM ──
   const form = document.getElementById('contact-form');
   const succ = document.getElementById('form-success');
-  const val  = inp => {
-    const err = document.getElementById('err-' + inp.id);
-    let ok = !inp.required || !!inp.value.trim();
-    if (inp.type === 'email' && inp.value) ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inp.value);
-    if (err) err.classList.toggle('show', !ok);
-    inp.classList.toggle('error', !ok);
-    inp.classList.toggle('valid', ok && !!inp.value.trim());
+
+  const mdErrorMessages = {
+    prenom: "Merci d'indiquer votre prénom.",
+    nom: "Merci d'indiquer votre nom.",
+    email: "Adresse email invalide.",
+  };
+
+  // Validate MD text fields (md-outlined-text-field)
+  const valMd = field => {
+    let ok = !field.required || !!field.value.trim();
+    if (field.type === 'email' && field.value) ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value);
+    field.error = !ok;
+    if (!ok) field.errorText = mdErrorMessages[field.id] || 'Champ requis.';
     return ok;
   };
-  form.querySelectorAll('.form-input[required]').forEach(i => {
-    i.addEventListener('blur', () => val(i));
-    i.addEventListener('input', () => { if (i.classList.contains('error')) val(i); });
+
+  // Validate native date inputs
+  const valDate = inp => {
+    const err = document.getElementById('err-' + inp.id);
+    const ok = !inp.required || !!inp.value.trim();
+    if (err) err.classList.toggle('show', !ok);
+    inp.classList.toggle('error', !ok);
+    return ok;
+  };
+
+  form.querySelectorAll('md-outlined-text-field[required]').forEach(field => {
+    field.addEventListener('blur', () => valMd(field));
+    field.addEventListener('input', () => { if (field.error) valMd(field); });
   });
+  form.querySelectorAll('input[type="date"][required]').forEach(i => {
+    i.addEventListener('blur', () => valDate(i));
+    i.addEventListener('change', () => { if (i.classList.contains('error')) valDate(i); });
+  });
+
   const formErrGlobal = document.createElement('div');
   formErrGlobal.id = 'form-err-global';
   formErrGlobal.style.cssText = 'display:none;color:#c0392b;margin-top:.75rem;font-size:.9rem;text-align:center';
   form.querySelector('.form-submit').insertAdjacentElement('afterend', formErrGlobal);
+
   const btn = form.querySelector('.form-submit');
+  const ICON_SVG = '<svg slot="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
+
   form.addEventListener('submit', async e => {
     e.preventDefault();
     formErrGlobal.style.display = 'none';
-    if (![...form.querySelectorAll('.form-input[required]')].map(val).every(Boolean)) return;
+    const mdOk  = [...form.querySelectorAll('md-outlined-text-field[required]')].map(valMd).every(Boolean);
+    const dateOk = [...form.querySelectorAll('input[type="date"][required]')].map(valDate).every(Boolean);
+    if (!mdOk || !dateOk) return;
+
+    // Build FormData manually to capture MD form-associated elements
+    const data = new FormData();
+    form.querySelectorAll('md-outlined-text-field[name]').forEach(f => data.append(f.name, f.value));
+    form.querySelectorAll('md-outlined-select[name]').forEach(f => data.append(f.name, f.value));
+    form.querySelectorAll('input[name]').forEach(f => data.append(f.name, f.value));
+
     btn.disabled = true;
     btn.textContent = 'Envoi en cours…';
     try {
-      const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
+      const res = await fetch(form.action, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
       if (res.ok) { form.style.display = 'none'; succ.classList.add('show'); }
-      else { const d = await res.json(); formErrGlobal.textContent = d.errors ? d.errors.map(x => x.message).join(', ') : "Erreur d'envoi. Réessayez."; formErrGlobal.style.display = 'block'; btn.disabled = false; btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Envoyer la demande'; }
-    } catch { formErrGlobal.textContent = 'Pas de connexion. Vérifiez votre réseau et réessayez.'; formErrGlobal.style.display = 'block'; btn.disabled = false; btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg> Envoyer la demande'; }
+      else { const d = await res.json(); formErrGlobal.textContent = d.errors ? d.errors.map(x => x.message).join(', ') : "Erreur d'envoi. Réessayez."; formErrGlobal.style.display = 'block'; btn.disabled = false; btn.innerHTML = ICON_SVG + ' Envoyer la demande'; }
+    } catch { formErrGlobal.textContent = 'Pas de connexion. Vérifiez votre réseau et réessayez.'; formErrGlobal.style.display = 'block'; btn.disabled = false; btn.innerHTML = ICON_SVG + ' Envoyer la demande'; }
   });
+
   const today = new Date().toISOString().split('T')[0];
   document.getElementById('arrivee').min = today;
   document.getElementById('depart').min = today;
