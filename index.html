@@ -12,6 +12,15 @@
 </head>
 <body>
 
+<!-- ── INTRO SPLASH ── -->
+<div id="intro-splash" class="intro-splash">
+  <div class="intro-inner">
+    <img src="logo.svg" alt="Clos Germanois" class="intro-logo" />
+    <div class="intro-rule"></div>
+    <button class="intro-enter" id="intro-enter">Entrer</button>
+  </div>
+</div>
+
 <!-- ── SCROLL PROGRESS ── -->
 <div id="scroll-progress"></div>
 
@@ -790,6 +799,29 @@
   document.getElementById('depart').min = today;
   document.getElementById('arrivee').addEventListener('change', () => { document.getElementById('depart').min = document.getElementById('arrivee').value; });
 
+})();
+
+// ── INTRO SPLASH ──
+(function () {
+  const splash = document.getElementById('intro-splash');
+  const btn    = document.getElementById('intro-enter');
+  if (!splash) return;
+
+  // Ne pas montrer si on arrive via un lien ancre (#chambre, etc.)
+  if (window.location.hash) {
+    splash.style.display = 'none';
+    return;
+  }
+
+  function dismiss() {
+    splash.classList.add('fade-out');
+    setTimeout(() => { splash.style.display = 'none'; }, 1500);
+  }
+
+  btn.addEventListener('click', dismiss);
+
+  // Auto-dismiss après 5 secondes (bouton visible dès 1.7s)
+  setTimeout(dismiss, 5000);
 })();
 </script>
 </body>
