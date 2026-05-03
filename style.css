@@ -704,7 +704,7 @@ textarea.form-input { resize: vertical; min-height: 120px; }
 .intro-splash {
   position: fixed;
   inset: 0;
-  background: #1C0F05;
+  background: #FDFAF5;
   z-index: 10000;
   display: flex;
   align-items: center;
@@ -730,13 +730,12 @@ textarea.form-input { resize: vertical; min-height: 120px; }
   opacity: 0;
   transform: translateY(14px);
   animation: introRise 1.3s cubic-bezier(.4,0,.2,1) .2s forwards;
-  filter: brightness(0) invert(1);
 }
 
 .intro-rule {
   width: 0;
   height: 1px;
-  background: rgba(255,255,255,.25);
+  background: rgba(44,26,14,.25);
   animation: introExpand 1s ease .9s forwards;
 }
 
@@ -744,8 +743,8 @@ textarea.form-input { resize: vertical; min-height: 120px; }
   opacity: 0;
   animation: introFadeIn .9s ease 1.7s forwards;
   background: none;
-  border: 1px solid rgba(255,255,255,.35);
-  color: rgba(255,255,255,.75);
+  border: 1px solid rgba(44,26,14,.35);
+  color: rgba(44,26,14,.7);
   padding: .65rem 2.2rem;
   letter-spacing: .22em;
   font-size: .72rem;
@@ -755,8 +754,8 @@ textarea.form-input { resize: vertical; min-height: 120px; }
   transition: border-color .3s, color .3s;
 }
 .intro-enter:hover {
-  border-color: rgba(255,255,255,.75);
-  color: #fff;
+  border-color: rgba(44,26,14,.8);
+  color: #2C1A0E;
 }
 
 @keyframes introRise {
