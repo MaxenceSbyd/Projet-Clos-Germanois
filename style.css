@@ -698,6 +698,46 @@ textarea.form-input { resize: vertical; min-height: 120px; }
 }
 
 /* ═══════════════════════════════════════════════════════════
+   SECTION-BASED SPA NAVIGATION
+   ═══════════════════════════════════════════════════════════ */
+
+body.spa { overflow: hidden; height: 100vh; }
+
+#pages-container {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+.page-view {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.45s ease, visibility 0s linear 0.45s;
+}
+
+.page-view.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: opacity 0.45s ease, visibility 0s;
+}
+
+/* Top clearance for non-hero page-views (nav is 72px, add breathing room) */
+.page-view:not(#page-accueil) > section:first-child {
+  padding-top: calc(var(--nav-h) + 4rem);
+}
+
+/* Active nav link indicator */
+.nav-links a.nav-active { color: var(--accent) !important; }
+.menu-overlay a.nav-active { color: var(--accent) !important; }
+
+/* ═══════════════════════════════════════════════════════════
    INTRO SPLASH
    ═══════════════════════════════════════════════════════════ */
 
